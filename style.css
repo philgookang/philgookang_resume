@@ -1,0 +1,80 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@charset "utf-8";
+*{margin:0;padding:0;}
+html, body {font-family: TimesNewRoman,Times New Roman,Times,'Nanum Gothic',Baskerville,Georgia,serif; margin: 0px; padding: 0px; border: 0px; width: 100%; height: 100%; -webkit-font-smoothing: antialiased; background-color: #fff; }
+table {border-spacing:0;border-collapse:collapse;}
+table td, table th {padding:0;}
+a:link, a:visited, visited, active, hover, focus { color:#000 ; text-decoration: none; -webkit-tap-highlight-color:rgba(0,0,0,0); }
+
+
+.container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.head {
+
+}
+.head .name {
+    padding-top: 30px;
+    font-size: 26px;
+    font-weight: bold;
+    padding-bottom: 14px;
+    box-sizing: border-box;
+    border-bottom: 3px solid #000;
+    margin-bottom: 7px;
+    padding-left: 15px;
+}
+.head .contact {
+    box-sizing: border-box;
+    padding-left: 40px;
+    font-size: 15px;
+    line-height: 24px;
+    padding-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+}
+.table td {
+    box-sizing: border-box;
+    padding: 10px 5px;
+    border-top: 1px solid #000;
+}
+.table td:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    width: 160px;
+    vertical-align: top;
+}
+.table td:last-child {
+    font-size: 15px;
+    line-height: 22px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+}
+.table td:last-child h2 {
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+.table td:last-child h2:first-child {
+    padding-top: 0px;
+}
+.table td:last-child h2 span {
+    float: right;
+}
+.table td:last-child ul {
+    list-style-type: square;
+    padding-left: 16px;
+}
+.table td:last-child ul li {
+    padding-bottom: 5px;
+}
+.table td:last-child .long-text {
+    line-height: 26px;
+    text-align: justify;
+}

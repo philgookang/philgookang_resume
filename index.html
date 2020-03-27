@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <!-- Page Encoding -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta charset="UTF-8"/>
+
+        <!-- Page Meta Data-->
+		<meta name="description" content=""/>
+		<meta name="keywords" content=""/>
+		<meta name="author" content="Phil Goo Kang"/>
+        <meta name="copyright" content="Copyrights © Phil Goo Kang  All Rights Reserved" />
+
+        <!-- IE Condition Where Breaking CSS -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+        <!-- Mobile first -->
+		<meta name="viewport" content="width=1000"/>
+
+        <!-- Page Title -->
+        <title>Phil's Resume</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+	</head>
+	<body>
+        <div class="container">
+
+            <div class="head">
+                <div class="name">Phil Goo Kang (강필구)</div>
+
+                <div class="contact">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td style="width: 300px;">Email : philgookang@gmail.com</td>
+                                <td>Phone Number : 010-9126-0221</td>
+                            </tr>
+                            <tr>
+                                <td>Github : <a href="http://github.com/philgookang/">github.com/philgookang</a></td>
+								<td>Portfolio : <a href="http://portfolio.philgookang.com/">portfolio.philgookang.com</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--/.contact-->
+            </div>
+            <!--/.head-->
+
+            <table class="table">
+                <tbody>
+					<tr>
+						<td>Objective</td>
+						<td>
+							<p class="long-text">
+								I am a hardworking, passionate, and dedicated professional software engineer, with a thesis on Image Captioning using Deep Learning, seeking a position researching Computer Vision and Language Processing using Machine (Deep) Learning.
+							</p>
+						</td>
+					</tr>
+                    <tr>
+                        <td>Experience</td>
+                        <td>
+                            <h2>
+								<i>Server & Database Developer</i> </br>
+								Osquare Corp
+                                <span>Mar 2016 &#8212; Feb 2017 (1.1년)</span>
+                            </h2>
+							<p class="long-text">
+                                집꾸미기는 인테리어를 기반으로 소셜 네트워크 서비스를 운영하는 스타트업입니다. 스타트업인 만큼 서버 개발 단계부터 시작해야 했고, 저는 그 외에도 웹과 애플리케이션 개발까지 동시에 담당했습니다. 웹 서버는 아마존 AWS 바탕으로 구축했고, Redis을 통해서 Session과 SQL 데이터를 cache 하는 등 무난하게 진행했습니다. 문제는 인테리어 분야가 복잡한 외래어를 많이 쓰고 단어와 가구의 관계가 복잡해서 간단한 SQL로 검색할 수 없다는 점이었습니다. 이를 해결하기 위한 방법으로 Elastic Search을 도입하여 데이터베이스의 attribute 관계를 정의하고 weight을 주어 복잡한 검색을 구현했습니다. 또한, PHP로 구현한 서버는 간단한 기본 데이터베이스 라이브러리 구조로 되어 있었기에 별도의 데이터베이스 클래스를 구현했습니다. 데이터베이스는 Master-Slave 구조로 되어 있어서 Read query는 slave에서만 실행하고, write query는 master에서 실행하도록 자동화된 라이브러리를 구현했습니다. 한편, Index로 performance가 나오지 않는 query는 별도 view를 통해서 해결했습니다.
+                            </p>
+
+                            <h2>
+								<i>Back & Front-end Developer</i> </br>
+								Riversoft
+                                <span>Feb 2014 &#8212; Mar 2016 (2.10년)</span>
+                            </h2>
+                            <p class="long-text">
+                                카페24 쇼핑몰 플랫폼의 제한적 확장성 문제를 제기하는 온라인 쇼핑몰 업체 사장님들 얘기를 듣고 더 많은 커스터마이징과 해외 서비스 (페이스북 스토어) 연동을 지원하는 신규 쇼핑몰 플랫폼 개발 작업을 진행했습니다. PHP Codeigniter 바탕으로 Mustache template을 쓰고 해외 Amazon, Ebay, 그리고 Facebook Store로 연동 할 수 있었습니다. Database는 MySQL 기반으로 구축하고 글로벌한 목표로 아마존 AWS의 여러 region에 서버를 구축하였습니다. Load balancing을 위해서 Route53을 이용하여 세계 어디에서든 접속하여도 빠르게 반응할 수 있는 서비스를 구축했습니다.
+                            </p>
+
+                            <h2>
+								<div>
+									<i>Server & Database Developer</i>
+								</div>
+								SK Planet, Seoul
+                                <span>Sept 2012 &#8212; Feb 2014(1.5년)</span>
+                            </h2>
+                            <p class="long-text">
+                                SK플래닛의 인큐베이션 센터에서 근무했습니다. 인큐베이션 센터는 사내 신사업을 추진하면서 각 팀별 기획, 개발, 운영을 모두 진행하는 부서입니다. 당시 제가 속한 팀은 미국에서 사용 중이었던 Square라는 서비스를 국내에 도입하려고 했습니다. Square는 스마트폰 이어폰 잭에 리더기를 꽂아 어디에서나 신용카드 결제를 이용할 수 있게 만드는 서비스로, 배달과 신용카드 결제가 활성화된 한국에 적격이라고 판단했습니다. 우선은 자영업자와 배달원에게 먼저 서비스를 도입하는 것을 목표로 사업을 시작했습니다. 그중 제가 담당한 업무는 어플리케이션 RESTful API와 서버 및 데이터베이스 개발 작업이었습니다. 서버 및 데이터베이스는 아마존 AWS 클라우드 서비스에서 구현했습니다. 구체적으로, 서버는 EC2 바탕으로 PHP/Apache로 개발하고, 데이터베이스는 RDS에서 MySQL로 Master-Slave 구조를 구축했습니다. PHP 바탕으로 구현한 API는 서비스를 위한 기본적인 회원과 상품 API를 제공했지만, 추가로 암호화된 신용카드 Hash 데이터를 PHP Security 라이브러리를 이용해서 DES3 CBC를 해독(decrypt)한 뒤, TRACK II란 데이터를 이용해서 카드사에 결제를 요청했습니다. 대역폭 처리를 위해 아마존 Load Balancer 서비스를 이용하여 트래픽을 여러 서버로 분산하며 문제를 해결했습니다. 이와 관련된 기사는 머니투데이 2013.7.8일 자에서도 확인할 수 있어 링크를 첨부합니다. <https://bit.ly/2orvXYs>
+                            </p>
+                        </td>
+                    </tr>
+					<tr>
+                        <td>Education</td>
+                        <td>
+							<h2>MS in Computer Science &amp; Engineering
+								<span>Mar 2018 &#8212; Feb 2020</span>
+                            </h2>
+                            <p>Seoul National University (Internet Database Laboratory)</p>
+							<p>Thesis: Detecting Parts of Speech from Image for Caption Generation</p>
+
+                            <h2>BS in Computer Science &amp; Engineering
+								<span>Mar 2009 &#8212; Dec 2017</span>
+                            </h2>
+                            <p>Hanyang University (Seoul)</p>
+
+                            <h2>Faith Academy
+								<span>Sept 1997 &#8212; Dec 2008</span>
+                            </h2>
+                            <p>International Private School</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Activities</td>
+                        <td>
+                            <h2>Best of the Best: White Hackers
+                                <span>Jul 2013 &#8212; Dec 2013</span>
+                            </h2>
+                            <p>Ministry of Science, ICT and Future Planning, 2기로 합격</p>
+
+                            <h2>Software Maestro
+                                <span>Jun 2012 &#8212; Dec 2012</span>
+                            </h2>
+                            <p>Ministry of Knowledge Economy, 3기로 합격</p>
+
+                            <h2>Samsung Software Membership
+                                <span>Jul 2011 &#8212; Dec 2012</span>
+                            </h2>
+                            <p>Samsung Electronic Gangnam Division, 21-2기로 합격</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Competitions</td>
+                        <td>
+                            <h2>Samsung Electronic Young &amp; Smart Mobile App Competition
+                                <span>May 11 2012</span>
+                            </h2>
+                            <p>Third Place</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Licence & Certificate</td>
+                        <td>
+							<h2>TOEIC
+                                <span>Oct. 13 2019</span>
+                            </h2>
+                            <p>Score: 940/990</p>
+
+                            <h2>정보처리 산업기사
+                                <span>May 1 2013</span>
+                            </h2>
+                            <p>Score: 합격</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Introduction</td>
+						<td>
+							<p class="long-text">
+"프로그래밍이 취미다" 라는 모토로 즐기면서 개발합니다. <br /><br />
+소프트웨어 개발 프로젝트를 진행하면서 항상 느끼는 것이 나는 이 길은 나의 길이다라는 것입니다. 그만큼 매번 열정을 다하고 스스로 공부하는 자세로 개발을 합니다. <br /><br />
+어려서부터 프로그래밍에 관심이 많았고 이를 계기로 한양대학교 컴퓨터공학과에 입학했습니다. 교내 프로젝트로 iPhone기반 어플리케이션 여러 가지를 만들었습니다. 그 이후, 국내 우수 개발자 대학생들이 모인 삼성전자 소프트웨어 멤버십에 21기로 합격하여, 본격적으로 개발 역량을 키웠습니다. 각 분야의 고수들에게서 다방면의 지식을 전수 받으며 멤버십 내에서 여러 프로젝트와 공모전 과제를 진행하여 경험을 쌓았고 자신감을 키웠습니다.
+<br /><br />
+그리고 2012년 하반기에 SK Planet에서 근무를 시작하여 새로운 Swipe 기반 결제 플랫폼을 개발하게 되었습니다. 본 프로젝트는 스마트폰에 제작한 카드 리더기를 붙여 결제 단말로 사용 할 수 있는 서비스입니다. 본 서비스를 진행하면서 신용카드를 리더기에 Swipe 후 읽어오는 데이터를 가공하여 결제를 위한 정보를 추출하고 VAN(PG)사에게 결제 요청을 내리는 시스템을 개발하였습니다. (보도자료: https://goo.gl/vfsAbE 머니튜데이)
+<br /><br />
+SK Planet 이후 리버소프트란 회사에서 어플리케이션와 서버개발을 경험하게 되었습니다. 국내 탑 의료 브랜드 국내 시스템망과 국제 물류 시스템 개발하면서 Big Database과 High Transaction 경험을하게 되었습니다. 본 기술 바탕으로 2016년 오스크웨어에서 62만명 동시 접속자를 처리 할수 있는 시스템을 개발 능력을 갖추게 되었습니다.
+<br /><br />
+산업에서 활동하면서 앞으로 AI 기술은 소프트웨어 분야와 상관없이 꼭 갖춰야 하는 기술로 보여 전문 지식을 얻기 위하여 서울대학교 대학원으로 진학하였습니다. 서울대학교 인터넷 데이터베이스 연구실에서 석사 과정을 이수하면서 딥러닝을 이용한 이미지 캡션 생성 기술에 대한 연구를 진행했습니다. 진행한 연구에서는 이미지 캡션 생성시 언어적 특징을 반영하기 위하여 영어 품사 별로 여러 개의 Convolution Neural Network(CNN) 모델을 활용하는 방법을 제안했습니다. 품사 별 CNN 모델을 학습하여 하나의 이미지로부터 여러 개의 품사 정보를 추출하고, 추출한 정보를 Long-Short Term Memory(LSTM)에 입력하여 캡션을 생성하는 모델을 만들었습니다. 이 연구로 작성 된 논문은 Machine Vision and Application Journal 심사 중에 있습니다.
+<br /><br />
+지금까지 공부한 것과 경험한 바탕으로 앞으로 계속 소프트웨어 엔지니어의 전문실력을 키워나가고 싶습니다.
+							</p>
+                        </td>
+                    </tr>
+					<tr>
+						<td>Questions</td>
+						<td>
+							<p class="long-text">
+								<b>성장 과정 중 가장 도전적이고 어려웠던 일화와 그것을 극복한 사례</b><br />
+								초등학생 때 부모님을 따라 필리핀에 갔습니다. 필리핀에서는 미국 국제학교에서 초등학교부터 고등학교까지 공부를 했습니다. 영어를 못 했던 저는 의도적으로 한국어를 쓰지 않으려고 노력했습니다. 사람들은 미국 학교가 여유로울 거라고 상상하지만, 공부 외에도 여러 활동을 해야 했기에 적응이 쉽지 않았습니다. 특히 저는 언어와 문화부터 익혀야 해서 더욱 그랬습니다. 그래서 학교에서 추천한 축구와 럭비 같은 스포츠 활동에 더욱 적극적으로 참여하며 몸으로 부딪혀 갔습니다. 그 결과, 고등학교를 졸업하기 전까지 영어와 미국 문화에 완벽히 적응할 수 있었습니다. 하지만 한국에 돌아오자 같은 문제가 반복되었습니다. 12년 가까이 한국어를 쓰지 않았기에, SAT 점수로 한양대학교에 합격했음에도, 한국어 능력 시험에 통과하지 못했던 것입니다. 강제로 휴학처리 된 저는 1년 안에 시험에 통과하지 못하면 입학이 취소된다는 통보를 받았습니다.<br/><br/>
+								한국어는 어린 시절에 사용했던 언어라 낯설진 않았고, 영어처럼 자신감 있게 시작했습니다. 하지만 어린 시절과 성인이 된 후의 언어 습득력 차이가 커서 매우 어려웠습니다. 스트레스로 불면증과 탈모가 생길 정도였습니다. 하지만 제 사전에 포기란 없습니다. 학원 공부는 물론이고, 삶에서 한국어를 가까이 접하려고 노력했습니다. 익숙한 팝송 대신 한국 음악을 듣고, 영화나 드라마도 모두 한국 것만 봤습니다. 예능을 볼 땐 화면에 나오는 모르는 자막을 모두 검색하며 실용적인 단어를 익혔습니다. 컴퓨터, 휴대전화, SNS 등 일상에서 접하는 모든 인터페이스 언어를 한국어로 설정했고, 발음을 고치기 위해 아나운서처럼 연필을 물고 연습했습니다.<br/><br/>
+								노력은 저를 배신하지 않았습니다. 한국어 능력 시험에 만점 가까운 점수로 통과한 저는 한국에서 대학 생활을 하게 되었습니다. 영어와 한국어 모두 공부가 아닌 삶의 일부라 생각했기에 정복할 수 있었다고 생각합니다. 시간을 내서 하는 공부가 아니라, 삶의 모든 순간을 그 언어로 채웠습니다. 업무도 마찬가지일 것입니다. 노동이 아닌 제 삶이라 여기며 매사에 헌신하겠습니다.
+								<br/><br/><br/>
+								<b>창의성을 발휘했던 사례</b><br/>
+								게임을 좋아했던 저는 즐기는 차원을 넘어 직접 만들고 싶었고, 프로그래머의 길을 걷게 되었습니다. 초기에는 의욕만 있고 기술이 없었습니다. SSM에서 바다 운영체제 바탕으로 게임을 개발할 기회가 생겼지만, 당시까지만 해도 Java만 다룰 수 있을 뿐 게임 개발 관련 지식은 전무했습니다. 사실 저만의 문제는 아니었습니다. 바다가 막 출시되었던 때라 관련 정보가 매우 제한적이었기 때문에, 바다 기반 게임 개발 정보를 찾을 수 없었습니다. 온라인 강의, 개발 커뮤니티, 깃헙 등 여러 방면에서 배우려 했으나 허사였습니다. 그러던 중 발견한 게임 프레임워크 Cocos2d-x가 실마리가 되었습니다. 개발 초기라 커뮤니티가 없었고 베타 버전은 개발문서도 없었지만, 다행히 공개된 Cocos2d-x 기반의 FPS 게임 코드를 발견한 것입니다. 비록 개인이 개발한 코드라 문서나 주석처리 등이 없었지만, 그걸 분석하며 첫걸음을 뗄 수 있었습니다. 방법은 원시적이었습니다. 한 줄씩 지워가며 그 코드가 어떤 기능을 하는지 알아냈습니다. 외부 클래스나 함수 호출을 많이 하지 않는 단일 코드부터 지우면서 공부했는데, 시간이 오래 걸릴 뿐만 아니라 어려움도 많았습니다. 가장 어려운 부분은 객체 클래스로, 글로벌하게 사용되다 보니 프로젝트 한쪽의 코드를 봐도 전체 그림이 그려지지 않았습니다. 로그 출력 코드를 지웠는데 앱이 실행되지 않아 당황스러운 적도 있었습니다. 그렇게 코드를 분석하는 데만 2개월이라는 시간이 소모되었습니다. 하지만 코드를 완전히 분해해서 분석하다 보니, Cocos2d-x 프레임워크 내부 코드를 보면서 필요한 부분을 사용할 수 있는 수준으로 성장했습니다.
+								<br /><br />
+								그렇게 갖춘 능력으로 게임을 만들었습니다. 제가 만든 게임이 앱스토어 1위까지 올라가는 것을 보면서 그동안의 고생을 모두 보상받은 것 같았습니다. 무엇보다 그 노력들은 앞으로 더 발전할 수 있는 저의 단단한 토대가 되었습니다.
+								<br/><br/><br/>
+								<b>성격의 장단점</b><br/>
+								책임감은 저의 가장 큰 장점입니다. 4형제 중 막내로 태어난 제 삶은 치열했습니다. 부모님께선 저를 막내라고 편애하지 않고 모든 형제를 똑같이 사랑하셨기 때문에, 형들 사이에서 저는 이리저리 치일 때가 많았습니다. 그렇다고 막내라는 이유만으로 뒤처지고 싶지도 않아 공부부터 집안일까지 제가 할 수 있는 일에는 항상 최선을 다했습니다. 학교와 달리 집에서는 모든 과정이 드러나기 때문에, 평소 태도부터 인정받고 싶었습니다. 그렇게 제 일에 책임지려는 열정은 나이를 먹을수록 자연스러운 습관으로 몸에 뱄습니다.
+								<br/><br/>
+								반면, 이런 환경에서 자란 저에겐 생각이 많다는 단점이 있습니다. 실수 없이 좋은 결과를 보여주려는 마음에 늘 신중할 수밖에 없었고, 자연히 생각도 많아졌습니다. 그러다 보니 스트레스도 많이 받는 편입니다. 그 과정을 딛고 이룬 것도 많지만, 장기적으로 하려면 결국 몸과 마음을 관리해야 한다고 생각합니다. 그래서 조금 더 여유로운 마음가짐을 갖기 위해 철저히 일정을 조정하려고 노력하고 있습니다.
+								<br/><br/>
+								이런 토대에서 저는 전문성을 갖춰왔습니다. 늘 배우려는 자세로 일하니 실력이 늘었고, 무엇보다 책임감 있는 자세로 신뢰를 받았습니다. 프리랜서로 일하던 시절, 전 직장 동료들로부터 제가 책임감이 강하다는 말을 들은 협력 업체들은 많은 외주 프로젝트를 맡겼고, 저는 실수나 지연 없이 그 일들을 수행하며 능력을 인정받았습니다. 앞으로도 변치 않는 자세로 책임감 있게 일하겠습니다.
+							</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--/.container-->
+    </body>
+</html>
